@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="FORM_ASP.NET.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Css/Style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class =" wrapper">
+            <div class ="header">
+                <%--<h1>THIS IS HEADER OF MY PAGE !!</h1>--%>
+                <img src="Images/yoga.png" width="1000" />
+            </div>
+            <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            </div>
+            <div class="footer">
+                <h3>All Rights Reserved with My Website &copy; 2024</h3>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
